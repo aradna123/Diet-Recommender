@@ -3,7 +3,8 @@ import HomePage from "./HomePage";
 
 import Report from "./Report";
 import ContactUs from "./ContactUs";
-import AIAssistant from "./AIAssistant";
+import AIAssistantDisease from "./AIAssistantDisease";
+import AIAssistantBMI from "./AIAssistantBMI";
 
 const Dashboard = ({ sidebarToggle, activePage }) => {
 	let content;
@@ -18,8 +19,11 @@ const Dashboard = ({ sidebarToggle, activePage }) => {
 		case "Contact Us":
 			content = <ContactUs />;
 			break;
-		case "AI Assistant":
-			content = <AIAssistant />;
+		case "AI Assistant BMI":
+			content = <AIAssistantBMI />;
+			break;
+		case "AI Assistant Disease":
+			content = <AIAssistantDisease />;
 			break;
 		default:
 			content = <HomePage />;

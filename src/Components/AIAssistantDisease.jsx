@@ -53,88 +53,36 @@ const AIAssistant = () => {
 
 	return (
 		<div style={{ height: "100vh", overflow: "auto" }}>
-			<div className="max-w-md mx-auto my-auto p-4 bg-gray-100 rounded-lg shadow-md">
-				<h2 className="text-xl font-bold mb-4">AI Assistant</h2>
+			<div className="max-w-md mx-auto my-10 p-4 bg-gray-100 rounded-lg shadow-md">
+				<h2 className="text-xl font-bold mb-4">AI Assistant Disease</h2>
+
 				<div className="mb-4">
 					<label className="block mb-2">
-						Age:
+						Disease Name:
+						{/* <textarea /> */}
 						<input
-							type="number"
-							value={age}
-							onChange={(e) => setAge(e.target.value)}
-							className="block w-full border-gray-300 rounded-md mt-1"
-						/>
-					</label>
-				</div>
-				<div className="mb-4">
-					<label className="block mb-2">
-						Gender:
-						<select
-							value={gender}
-							onChange={(e) => setGender(e.target.value)}
-							className="block w-full border-gray-300 rounded-md mt-1"
-						>
-							<option value="">Select...</option>
-							<option value="male">Male</option>
-							<option value="female">Female</option>
-						</select>
-					</label>
-				</div>
-				<div className="mb-4">
-					<label className="block mb-2">
-						Height (cm):
-						<input
-							type="number"
+							type="text"
+							style={{ height: "40px" }}
 							value={height}
 							onChange={(e) => setHeight(e.target.value)}
 							className="block w-full border-gray-300 rounded-md mt-1"
 						/>
 					</label>
 				</div>
-				<div className="mb-4">
-					<label className="block mb-2">
-						Weight (kg):
-						<input
-							type="number"
-							value={weight}
-							onChange={(e) => setWeight(e.target.value)}
-							className="block w-full border-gray-300 rounded-md mt-1"
-						/>
-					</label>
-				</div>
+
 				<button
 					onClick={calculateBmi}
 					className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md mb-4"
 				>
 					Calculate BMI
 				</button>
-				<div className="mb-4">
-					<label className="block mb-2">
-						BMI:
-						<input
-							type="text"
-							value={bmi}
-							readOnly
-							className="block w-full border-gray-300 rounded-md mt-1"
-						/>
-					</label>
-				</div>
-				<div className="mb-4">
-					<label className="block mb-2">
-						BMI Status:
-						<input
-							type="text"
-							value={bmiStatus}
-							readOnly
-							className="block w-full border-gray-300 rounded-md mt-1"
-						/>
-					</label>
-				</div>
+
 				<div className="mb-4">
 					<label className="block mb-2">
 						Diet Plan:
 						<input
 							type="text"
+							style={{ height: "40px" }}
 							value={dietPlan}
 							readOnly
 							className="block w-full border-gray-300 rounded-md mt-1"
