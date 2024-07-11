@@ -9,13 +9,12 @@ export default function Layout() {
 	return (
 		<div
 			className="flex"
-			style={
-				{
-					// overflow: "hidden",
-					// height: "100vh",
-					// width: "100vw",
-				}
-			}
+			style={{
+				overflowX: "hidden",
+				overflowY: "auto",
+				// height: "100vh",
+				// width: "100vw",
+			}}
 		>
 			<Sidebar sidebarToggle={sidebarToggle} setActivePage={setActivePage} />
 			<div className="flex-grow">
