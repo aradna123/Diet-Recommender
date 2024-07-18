@@ -1,20 +1,19 @@
 import React from "react";
 import homePageImg from "./Images/original.jpg";
 import "./HomePage.css"; // Ensure this path is correct
-import { Link } from "react-router-dom";
 
 const HomePage = () => {
 	return (
 		<div className="homepage-container">
 			<nav className="navbar">
 				<div className="logo">Diet Artificially</div>
-				<div className="nav-links">
+				{/* <div className="nav-links">
 					<Link to="#">Meal Planner</Link>
 					<Link to="#">Diet Plan</Link>
 					<Link to="#">Family Plan</Link>
 					<Link to="#">Personal Trainer</Link>
 					<Link to="#">Consultation</Link>
-				</div>
+				</div> */}
 			</nav>
 			<div className="content">
 				<div className="text-section">
