@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const AIAssistant = () => {
-	const [age, setAge] = useState("");
-	const [gender, setGender] = useState("");
+	// const [age, setAge] = useState("");
+	// const [gender, setGender] = useState("");
 	const [height, setHeight] = useState("");
 	const [weight, setWeight] = useState("");
 	const [bmi, setBmi] = useState("");
