@@ -9,47 +9,47 @@ const AIAssistant = () => {
 	const [bmiStatus, setBmiStatus] = useState("");
 	const [dietPlan, setDietPlan] = useState("");
 
-	const calculateBmi = () => {
-		if (height && weight) {
-			const heightInMeters = height / 100;
-			const bmiValue = (weight / (heightInMeters * heightInMeters)).toFixed(2);
-			setBmi(bmiValue);
-			determineBmiStatus(bmiValue);
-			generateDietPlan(bmiValue);
-		}
-	};
+	// const calculateBmi = () => {
+	// 	if (height && weight) {
+	// 		const heightInMeters = height / 100;
+	// 		const bmiValue = (weight / (heightInMeters * heightInMeters)).toFixed(2);
+	// 		setBmi(bmiValue);
+	// 		determineBmiStatus(bmiValue);
+	// 		generateDietPlan(bmiValue);
+	// 	}
+	// };
 
-	const determineBmiStatus = (bmiValue) => {
-		if (bmiValue < 18.5) {
-			setBmiStatus("Underweight");
-		} else if (bmiValue < 24.9) {
-			setBmiStatus("Normal weight");
-		} else if (bmiValue < 29.9) {
-			setBmiStatus("Overweight");
-		} else {
-			setBmiStatus("Obesity");
-		}
-	};
+	// const determineBmiStatus = (bmiValue) => {
+	// 	if (bmiValue < 18.5) {
+	// 		setBmiStatus("Underweight");
+	// 	} else if (bmiValue < 24.9) {
+	// 		setBmiStatus("Normal weight");
+	// 	} else if (bmiValue < 29.9) {
+	// 		setBmiStatus("Overweight");
+	// 	} else {
+	// 		setBmiStatus("Obesity");
+	// 	}
+	// };
 
-	const generateDietPlan = (bmiValue) => {
-		if (bmiValue < 18.5) {
-			setDietPlan(
-				"Increase calorie intake with nutritious foods like nuts, avocados, and whole grains."
-			);
-		} else if (bmiValue < 24.9) {
-			setDietPlan(
-				"Maintain your current diet. Focus on balanced nutrition including fruits, vegetables, lean proteins, and whole grains."
-			);
-		} else if (bmiValue < 29.9) {
-			setDietPlan(
-				"Consider a diet with controlled portions, focusing on lean proteins, vegetables, and whole grains."
-			);
-		} else {
-			setDietPlan(
-				"Adopt a low-calorie, nutrient-dense diet. Include vegetables, lean proteins, and limit sugars and fats."
-			);
-		}
-	};
+	// const generateDietPlan = (bmiValue) => {
+	// 	if (bmiValue < 18.5) {
+	// 		setDietPlan(
+	// 			"Increase calorie intake with nutritious foods like nuts, avocados, and whole grains."
+	// 		);
+	// 	} else if (bmiValue < 24.9) {
+	// 		setDietPlan(
+	// 			"Maintain your current diet. Focus on balanced nutrition including fruits, vegetables, lean proteins, and whole grains."
+	// 		);
+	// 	} else if (bmiValue < 29.9) {
+	// 		setDietPlan(
+	// 			"Consider a diet with controlled portions, focusing on lean proteins, vegetables, and whole grains."
+	// 		);
+	// 	} else {
+	// 		setDietPlan(
+	// 			"Adopt a low-calorie, nutrient-dense diet. Include vegetables, lean proteins, and limit sugars and fats."
+	// 		);
+	// 	}
+	// };
 
 	return (
 		<div style={{ height: "100vh", overflow: "auto" }}>
@@ -71,7 +71,7 @@ const AIAssistant = () => {
 				</div>
 
 				<button
-					onClick={calculateBmi}
+					// onClick={calculateBmi}
 					className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md mb-4"
 				>
 					Calculate BMI
