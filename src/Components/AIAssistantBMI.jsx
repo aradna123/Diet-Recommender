@@ -57,6 +57,7 @@ const AIAssistant = () => {
 						},
 					})
 					.then((response) => {
+						console.log(response);
 						setFoodName(response.data.result.food_name);
 						setImage1(response.data.result.food_image1); // Assuming images are provided as URLs
 						setImage2(response.data.result.food_image2); // Assuming images are provided as URLs
@@ -154,9 +155,9 @@ const AIAssistant = () => {
 						Diet Plan:
 						<textarea
 							value={foodName}
-							readOnly
-							rows={4} // Set the number of rows here
+							rows={3} // Set the number of rows here
 							className="block w-full border-gray-300 rounded-md mt-1"
+							readOnly
 						/>
 					</label>
 				</div>
