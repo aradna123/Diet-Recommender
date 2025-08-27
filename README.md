@@ -1,7 +1,7 @@
 
 #Diet Recommender
 
-# 🥗 Personalized Diet Recommender System
+
 
 ## 📌 Overview
 
