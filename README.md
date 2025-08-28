@@ -78,7 +78,3 @@ This system is a **step toward research in personalized AI systems**, contributi
 * Explore **multilingual dietary recommendation systems** for accessibility.
 
 
-
-
-
-Do you want me to also **add a section with a sample diagram (system architecture)** so your README looks more professional & research-oriented?
