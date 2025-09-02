@@ -24,14 +24,15 @@ The goal is to provide **personalized nutrition guidance** that adapts to indivi
 - **Backend :** Django
 - **Database :** MYSQL
    ```
-   
-## 📌 Roadmap
+  
 
-* [ ] Expand **disease-specific meal recommendations**
-* [ ] Add **exercise suggestions** alongside diet
-* [ ] AI-powered **meal substitutions**
-* [ ] Integration with **fitness/wearable devices**
+## 📌 Use Cases
 
+* **Personalized Meal Planning**
+* **Disease-Level Based Diets**
+* **Nutritional Guidance**
+* **Dietary Restrictions Support**
+* **User Progress Tracking**
 ---
 
 ## 🤝 Contributing
@@ -43,7 +44,4 @@ Contributions are welcome! Fork the repo and submit a pull request.
 ## 📜 License
 
 This project is licensed under the **MIT License**.
-
-
-```
 
