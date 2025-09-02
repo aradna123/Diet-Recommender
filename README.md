@@ -21,9 +21,8 @@ The goal is to provide **personalized nutrition guidance** that adapts to indivi
 
 - **Frontend:** React / HTML, CSS, JavaScript  
 - **Styling:** Tailwind CSS / Custom CSS  
-- **Backend :** Node.js
+- **Backend :** Django
 - **Database :** MYSQL
-
    ```
    
 ## 📌 Roadmap
