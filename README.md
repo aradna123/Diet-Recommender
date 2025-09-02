@@ -24,11 +24,8 @@ The goal is to provide **personalized nutrition guidance** that adapts to indivi
 - **Backend :** Node.js
 - **Database :** MYSQL
 
-
    ```
-
-
-
+   
 ## 📌 Roadmap
 
 * [ ] Expand **disease-specific meal recommendations**
